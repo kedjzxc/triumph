@@ -750,9 +750,12 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        overflow: scroll;
         @media(max-width: 845px) {
            max-width: 100%;
         }
+        
+        
     }
     &__title {
         font-style: normal;

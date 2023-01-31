@@ -854,6 +854,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  overflow: scroll;
 }
 @media (max-width: 845px) {
   .popup__form {
