@@ -697,6 +697,7 @@ body {
         background-color: #000;
         border-radius: 30px;
         position: relative;
+        overflow: scroll;
         @media(max-width: 845px) {
             justify-content: center;
             flex-direction: column;
@@ -750,7 +751,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        overflow: scroll;
+        
         @media(max-width: 845px) {
            max-width: 100%;
         }

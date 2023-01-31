@@ -800,6 +800,7 @@ body {
   background-color: #000;
   border-radius: 30px;
   position: relative;
+  overflow: scroll;
 }
 @media (max-width: 845px) {
   .popup__inner {
@@ -854,7 +855,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  overflow: scroll;
 }
 @media (max-width: 845px) {
   .popup__form {
