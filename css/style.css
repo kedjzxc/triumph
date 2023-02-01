@@ -7,6 +7,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #181715;
 }
+body.scroll__hidden {
+  overflow: hidden;
+}
 
 .container {
   max-width: 1407px;
@@ -45,8 +48,13 @@ body {
   padding: 9px 15px;
   width: 413px;
   max-width: 100%;
-  max-width: 100%;
   outline: none;
+}
+@media (max-width: 850px) {
+  .input {
+    width: 80%;
+    padding: 3px 6px;
+  }
 }
 
 .burger {
@@ -211,6 +219,11 @@ body {
   max-width: 100%;
   margin-bottom: 62px;
 }
+@media (max-width: 455px) {
+  .main__text-block {
+    margin-bottom: 34px;
+  }
+}
 .main__title {
   color: #fff;
   font-style: normal;
@@ -225,9 +238,11 @@ body {
     line-height: 40px;
   }
 }
-@media (max-width: 452px) {
+@media (max-width: 455px) {
   .main__title {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
   }
 }
 @media (max-width: 352px) {
@@ -242,9 +257,10 @@ body {
   line-height: 29px;
   color: #fff;
 }
-@media (max-width: 452px) {
+@media (max-width: 455px) {
   .main__text {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -800,7 +816,7 @@ body {
   background-color: #000;
   border-radius: 30px;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
 }
 @media (max-width: 845px) {
   .popup__inner {
@@ -850,11 +866,22 @@ body {
   align-items: center;
   padding-bottom: 30px;
 }
+@media (max-width: 850px) {
+  .popup__right {
+    width: 80%;
+    text-align: center;
+  }
+}
 .popup__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+@media (max-width: 850px) {
+  .popup__form {
+    align-items: center;
+  }
 }
 @media (max-width: 845px) {
   .popup__form {
@@ -871,10 +898,11 @@ body {
   padding-top: 54px;
   margin-bottom: 45px;
 }
-@media (max-width: 450px) {
+@media (max-width: 850px) {
   .popup__title {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
   }
 }
 .popup__input {

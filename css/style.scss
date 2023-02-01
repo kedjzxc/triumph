@@ -5,6 +5,9 @@ html {
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #181715;
+    &.scroll__hidden {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -42,8 +45,12 @@ body {
     padding: 9px 15px;
     width: 413px;
     max-width: 100%;
-    max-width: 100%;
     outline: none;
+    @media(max-width:850px) {
+        width: 80%;
+        padding: 3px 6px;
+    }
+
 }
 
 .burger {
@@ -195,6 +202,9 @@ body {
         width: 584px;
         max-width: 100%;
         margin-bottom: 62px;
+        @media (max-width:455px) {
+            margin-bottom: 34px;
+        }
     }
     &__title {
         color: #fff;
@@ -207,8 +217,10 @@ body {
             font-size: 40px;
             line-height: 40px;
         }
-        @media (max-width: 452px) {
-            font-size: 32px;
+        @media (max-width: 455px) {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 16px;
         }
         @media (max-width: 352px) {
             font-size: 28px;
@@ -220,9 +232,11 @@ body {
         font-size: 24px;
         line-height: 29px;
         color: #fff;
-        @media (max-width: 452px) {
-            font-size: 20px;
+        @media (max-width: 455px) {
+            font-size: 18px;
+            line-height: 22px;
         }
+       
     }
 }
 
@@ -688,6 +702,7 @@ body {
         flex-direction: column;
         justify-content: center;
         padding: 0 15px;
+        
     }
     &__inner {
         margin: auto;
@@ -697,12 +712,13 @@ body {
         background-color: #000;
         border-radius: 30px;
         position: relative;
-        overflow: scroll;
+        overflow: auto;
         @media(max-width: 845px) {
             justify-content: center;
             flex-direction: column;
             align-items: center;
         }
+        
     }
     &__close-btn {
         background: none;
@@ -745,13 +761,19 @@ body {
         justify-content: center;
         align-items: center;
         padding-bottom: 30px;
+        @media(max-width:850px) {
+            width: 80%;
+            text-align: center;
+        }
     }
     &__form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        
+        @media (max-width:850px) {
+            align-items: center;
+        }
         @media(max-width: 845px) {
            max-width: 100%;
         }
@@ -767,9 +789,10 @@ body {
         color: #fff;
         padding-top: 54px;
         margin-bottom: 45px;
-        @media(max-width:450px) {
-            font-size: 26px;
-            line-height: 36px;
+        @media(max-width:850px) {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 30px;
         }
     }
     &__input {
@@ -778,6 +801,7 @@ body {
         font-size: 20px;
         line-height: 24px;
         color: #fff;
+        
 
         &::placeholder {
             font-style: normal;
